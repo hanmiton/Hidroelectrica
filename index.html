@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="main.css" rel="stylesheet"/>
+	<style>.menu,.menu-escenas{width:100%;height:15vh;display:flex}body{background:url(./img/fondo.png) no-repeat #000;background-size:cover;margin:0}.imagen,.menu-escenas-escena{background-repeat:no-repeat;background-size:90%}.menu{justify-content:center}.menu-escenas{justify-content:center}.menu-escenas-escena{width:8%;height:13vh;border-radius:6px}.padreform{display:flex;flex-direction:column;width:100%;height:100vh;background: rgba(0,0,0,0.5)}.padreform-encabezado{display:flex;justify-content:center;width:100%;height:30vh}.padreform-encabezado-titulo{background-image:url(./img/titulo.png);background-position: center;width:40%;height:35vh;background-size:90%;opacity:1}.padreform-robot{display:flex;justify-content:center;width:100%;height:50vh}.padreform-robot-img{background-image:url(./img/robot.png);background-position: top;width:60%;height:50vh;background-size:80%}#EElogo1,.padreform-nombre-campo-logo1{background-image:url(./img/eelogo1.png)}.padreform-llenar{width:100%;height:20vh;display:flex;justify-content:center}.padre,.padreform-nombre{display:flex;flex-direction:column}.padreform-nombre{width:25%;height:15vh;justify-content:space-between}.padreform-nombre-campo{display:flex;justify-content:space-around;width:100%;height:8vh}.padreform-nombre-campo-logo1{width:15%;height:8vh;background-repeat:no-repeat;background-size:100%;border-radius: 2px}.padreform-nombre-boton{width:100%;height:5vh;border-radius:6px}.padreform-nombre-boton2{width:25%;height:5vh;border-radius:6px}#EElogo2{background-image:url(./img/eelogo2.png);background-size:100%;width: 25%}.padre-h1-c1-img,.padre-h2-img{background-repeat:no-repeat;background-size:80%}.padre{justify-content:center;width:100%;height:85vh}.padre-h1,.padre-h1-c1{justify-content:center;display:flex}.padre-h1{width:100%;height:55vh}.padre-h1-c1{width:70%;height:70vh}.padre-h1-c1-img{width:50%;height:42vh}.padre-h2{display:flex;justify-content:center;width:100%;height:85vh}.padre-h2-img{width:30%;height:85vh}#fond,#fondo,#menu{display:none}#img1{background-image:url(./img/img1.png)}#img2{background-image:url(./img/img2.png)}#img3{background-image:url(./img/img3.png)}#img4{background-image:url(./img/img4.png)}#img5{background-image:url(./img/img5.png)}#img6{background-image:url(./img/img6.png)}#img7{background-image:url(./img/img7.png)}#img8{background-image:url(./img/img8.png)}#img9{background-image:url(./img/img9.png)}#img10{background-image:url(./img/img10.png);width:75%;height:75vh;background-position:center}</style>
+</head>
+<body>
+	<!--seccoin formulario-->
+    <section id="formulario" class="padreform">
+    	<div class="padreform-encabezado">
+    		<div class="padreform-encabezado-titulo imagen">
+			</div>
+    	</div>
+    	<div class="padreform-robot">
+    		<div class="padreform-robot-img imagen">
+    		</div>
+    	</div>
+    	<div class="padreform-llenar">
+    		<div class="padreform-nombre">
+    			<div class="padreform-nombre-campo">
+    				<div id="EElogo1" class="padreform-nombre-campo-logo1">
+    				</div>
+    				<div id="EElogo2" class="padreform-nombre-campo-logo1">
+    				</div>
+    			</div>
+		  		<button id="comenzar" class="padreform-nombre-boton">Comenzar</button>
+    		</div>
+    	</div>	
+    </section>
+
+	<!--Escena numero 1-->
+
+	<section id="fondo" class="padre">
+        <div class="padre">
+            <div class="padre-h1">
+                <div id="semaforo">
+                </div> 
+                <div id="padre-h1-c1" class="latido">
+                </div>   
+            </div>
+        </div>
+          
+    </section>
+
+
+    <!--Escena numero 2-->
+    <div hidden id="fondo2">
+        <div class="padre">
+            <div class="padre-h1">
+                <div id="smgs" class="zoom">
+                </div> 
+                <div id="simg" class="latido">
+                </div>   
+            </div>
+            <div hidden id="oculto2">
+                <div class="padre-nuevo">
+                    <div id="milenio1" class="milenio1 latido"></div>
+
+                    <div id="milenio2" class="milenio1 latido"></div> 
+                </div>
+            </div>
+        </div>
+        
+        <!--<section class="padre">
+            <div class="padre"> 
+                <div id="animacion1" class="padre-h2">
+                        <div id="img8" class="padre-h2-img latido"></div>
+                        <div id="img9" class="padre-h2-img"></div>
+                        <div hidden id="img10contenedor">
+                            <div class="padre-h2-contenedor">
+                                <div class="padre-h2-img" id="img10">  
+                                    <div id="img101">
+                                    </div>
+                                    <div hidden id="img102">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="img11"></div>
+                        <div id="img12"></div>
+                        <div id="img13"></div>
+                        <div id="img14"></div>
+                </div>
+            </div>
+        </section>-->
+    </div>
+
+
+  <!--Escena numero 3-->
+    <section hidden id="fondo4">
+        <div class="pa4">
+            <div class="pa4-h1-centrar">
+                
+                <div hidden id="cas1"class="pa4-h3 latido">
+                </div>
+                <div  hidden id="cas2"class="pa4-h3-msg zoom">
+                </div>
+                <div id="cascada" class="pa4-h1 latido">
+                        <div  class="pa4-h1-tur">
+                            <div class="pa4-h1-tur-sping rotateimg">
+                            
+                            </div>
+                        </div> 
+                    
+                   
+                </div>
+                <div hidden  id="cas3"class="pa4-h3-msg2 zoom">
+                </div>
+                <div  hidden id="cas4"class="pa4-h2 latido">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Escena numero 3-->
+    <section hidden id="fondo3">
+        <div class="pa3">
+            <div class="pa3-h1">
+            </div>
+            <div class="pa3-h2">
+                <div id="enchufe" class="pa3-h2-msg latido zoom"></div>
+            </div>
+        </div>
+       <!-- <div class="padre3">
+            <div class="padre3-h1">
+                <div class="padre3-h1-contenedor">
+                    <div class="padre3-h1-contenedor-img1 zoom">                      
+                    </div>      
+                    <div class="padre3-h1-contenedor-img2">   
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </section>
+
+     <!--Escena numero 4-->
+    <section hidden id="fondo5">
+        <div class="padre3">
+            <div class="padre3-h1">
+                <div class="padre3-h1-contenedor">
+                    <div class="padre3-h1-contenedor-img1 ">                      
+                    </div>      
+                    <div class="padre3-h1-contenedor-img2 zoom">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+         <!--Escena numero 4-->
+    <section hidden id="fondo6">
+        <div class="padre4">
+            <div class="padre4-row1">
+                <div id= "i33" class="padre4-row1-caja imagen-juego"></div>
+                <div id= "i34" class="padre4-row1-caja imagen-juego"></div>
+                <div id= "i35" class="padre4-row1-caja imagen-juego"></div>
+                <div id= "i36" class="padre4-row1-caja imagen-juego"></div>
+                <div id= "i37" class="padre4-row1-caja imagen-juego"></div>
+                <div id= "i38" class="padre4-row1-caja imagen-juego">
+                     <form>
+                        <input id="tirar" type="button" onClick="lanzar()">
+                    </form>
+                        <script>
+                        var dado=0;
+                        function lanzar()
+                            {
+                                var randomdice=Math.round(Math.random()*5);
+                                document.images["mydice"].src=eval("face"+randomdice+".src");
+                                dado=dado+randomdice+1;
+                                $("#i"+dado).addClass("latido");
+                            }
+                        </script>
+                </div>
+                <div id= "i39" class="padre4-row1-caja imagen-juego">
+                    <img id="i39-dado" src="" name="mydice">
+                </div>
+                <div id= "i40" class="padre4-row1-caja imagen-juego"></div>
+            </div>
+            <div class="padre4-row1">
+                <div id="i32" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i31" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i30" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i29" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i28" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i27" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i26" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i25" class="padre4-row1-caja imagen-juego"></div>
+            </div>
+            <div class="padre4-row1">
+                <div  id="i17" class="padre4-row1-caja imagen-juego"></div>
+                <div  id="i18" class="padre4-row1-caja imagen-juego"></div>
+                <div  id="i19" class="padre4-row1-caja imagen-juego"></div>
+                <div  id="i20" class="padre4-row1-caja imagen-juego"></div>
+                <div  id="i21" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i22"  class="padre4-row1-caja imagen-juego"></div>
+                <div  id="i23" class="padre4-row1-caja imagen-juego"></div>
+                <div  id="i24" class="padre4-row1-caja imagen-juego"></div>
+            </div>
+            <div class="padre4-row1">
+                <div id="i16" class="padre4-row1-caja imagen-juego" ></div>
+                <div id="i15" class="padre4-row1-caja imagen-juego" ></div>
+                <div id="i14" class="padre4-row1-caja imagen-juego" ></div>
+                <div id="i13"  class="padre4-row1-caja imagen-juego" ></div>
+                <div id="i12" class="padre4-row1-caja imagen-juego" ></div>
+                <div id="i11" class="padre4-row1-caja imagen-juego" ></div>
+                <div id="i10" class="padre4-row1-caja imagen-juego" ></div>
+                <div id="i9" class="padre4-row1-caja imagen-juego" ></div>
+            </div>
+            <div class="padre4-row1">
+                <div id="i1" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i2" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i3" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i4" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i5" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i6" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i7" class="padre4-row1-caja imagen-juego"></div>
+                <div id="i8" class="padre4-row1-caja imagen-juego"></div>
+            </div>
+        </div>
+    </section>
+
+  
+	<!--Parte del menu de la app-->
+	<section id="menu" class="padre-contenedor-menuprueba">
+
+        <div class="padremenu">
+
+            <div class="padre-menuEscenas">
+
+                   <div id="FlechaAtras" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 ">
+                    </div>
+                    <div id="Escena1" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu">
+                    </div>
+                    <div id="Escena2"  class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu">
+                    </div>
+                    <div id="Escena3"  class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu">
+                    </div>
+                    <div id="Escena4" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu" >
+                    </div>
+                    <div id="Escena5" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu" >
+                    </div>
+                    <div id="Escena6" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu" >
+                    </div>
+                    <div id="FlechaAdelante" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 ">
+            </div>
+        </div>
+
+            
+    </section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+  	<script>!function o(n,i,e){function d(s,c){if(!i[s]){if(!n[s]){var r="function"==typeof require&&require;if(!c&&r)return r(s,!0);if(f)return f(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var u=i[s]={exports:{}};n[s][0].call(u.exports,function(o){var i=n[s][1][o];return d(i?i:o)},u,u.exports,o,n,i,e)}return i[s].exports}for(var f="function"==typeof require&&require,s=0;s<e.length;s++)d(e[s]);return d}({1:[function(o,n,i){$(document).ready(function(){$("#comenzar").click(function(){$("#formulario").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").css("visibility","visible"),$("#menu").fadeTo(1e3,1)})}),$(document).ready(function(){$("#img8").click(function(){$("#img8, #img9").hide("slow")})}),$(document).ready(function(){$("#Escena1").click(function(){$("body").css("background-image","url(./img/fondo.png)"),$("#fondo2").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena2").click(function(){$("body").css("background-image","url(./img/fondo.png)"),$("#fondo").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo2").css("visibility","visible"),$("#fondo2").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena3").click(function(){$("body").css("background-image","url(./img/fondo3.jpg)"),$("#fondo").hide("slow"),$("#fondo2").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo3").css("visibility","visible"),$("#fondo3").fadeTo(1e3,1),$("#menu").show("slow")})})},{}]},{},[1]);</script>
+  	
+  	<script>
+        window.onload = function() {
+            document.onmousemove = function(e) {
+                var x = -(e.clientX/40);
+                var y = -(e.clientY/40);
+                this.body.style.backgroundPosition = x + 'px ' + y + 'px';
+            };
+        };
+  	</script>
+    <script>
+
+
+
+/*cambio pantalla 2*/
+    $(document).ready(function(){
+        $('#Escena4').click(function(){
+            /*Ocultar escenas excepto la 2*/
+            $("body").css('background-image','url(./img/fondo4.jpg')    
+            $("#fondo").hide("slow");
+            $("#fondo2").hide("slow");
+            $("#fondo3").hide("slow");
+            $("#fondo5").hide("slow");
+            $("#fondo6").hide("slow");
+            $("#fondo4").css("visibility", "visible");
+            $("#fondo4").fadeTo(1000,1); 
+            $("#menu").show("slow");  
+        });
+    });
+
+
+    $(document).ready(function(){
+        $('#Escena5').click(function(){
+            /*Ocultar escenas excepto la 2*/
+            $("body").css('background-image','url(./img/fondo5.jpg')    
+            $("#fondo").hide("slow");
+            $("#fondo2").hide("slow");
+            $("#fondo3").hide("slow");
+            $("#fondo4").hide("slow");
+            $("#fondo6").hide("slow");
+            $("#fondo5").css("visibility", "visible");
+            $("#fondo5").fadeTo(1000,1); 
+            $("#menu").show("slow");  
+        });
+    });
+
+    $(document).ready(function(){
+        $('#Escena6').click(function(){
+            /*Ocultar escenas excepto la 2*/
+            $("body").css('background-image','url(./img/fondo6.jpg')    
+            $("#fondo").hide("slow");
+            $("#fondo2").hide("slow");
+            $("#fondo3").hide("slow");
+            $("#fondo4").hide("slow");
+            $("#fondo5").hide("slow");
+            $("#fondo6").css("visibility", "visible");
+            $("#fondo6").fadeTo(1000,1); 
+            $("#menu").show("slow");  
+        });
+    });
+
+    $(document).ready(function(){
+        $('#padre-h1-c1').click(function(){
+            /*Ocultar escenas excepto la 2*/
+            $("#padre-h1-c1").removeClass('latido'); 
+            
+        });
+    });
+
+      $(document).ready(function(){
+        $('#milenio1, #milenio2').click(function(){
+            /*Ocultar escenas excepto la 2*/
+            $('#milenio1, #milenio2').removeClass('latido'); 
+            
+        });
+    });
+numEscena=1;
+
+                $('#FlechaAtras').click(function(){
+                    
+                    $("#FlechaAdelante").css("visibility","visible");
+                    if(numEscena===2){
+                        $("#FlechaAtras").css("visibility","hidden");
+                     }
+
+                    if(numEscena==1){
+                        $("#fondo").hide("slow");    
+                    }
+                    else{
+                        $("#fondo"+numEscena+"").hide("slow");   
+                    }
+                    numEscena--;
+
+                    if( numEscena==2){
+                        $('body').css('background-image', "url(./img/fondo.png)");   
+                          
+                    }
+                    else{
+                         $('body').css('background-image', "url(./img/fondo"+numEscena+".jpg)");  
+                    }
+
+                    if(numEscena<=1){
+                         numEscena=1; 
+                        $("#fondo").show("slow");    
+                        $('body').css('background-image', "url(./img/fondo.png)");
+                    }
+
+                    $("#fondo"+numEscena+"").css("visibility", "visible");
+                    $("#fondo"+numEscena+"").fadeTo(1000,1); 
+                    $("#menu").show("slow");
+                  
+                });
+
+                 $('#FlechaAdelante').click(function(){
+
+
+                    $("#FlechaAdelante").removeClass("latido");
+                    $("#FlechaAtras").css("visibility","visible");
+                   
+                    if(numEscena===5){
+                        $("#FlechaAdelante").css("visibility","hidden");
+                    }
+                    /*funcion de las flechas*/
+                    if(numEscena==1){
+                        $("#fondo").hide("slow");    
+                    }
+                    else{
+                        $("#fondo"+numEscena+"").hide("slow");   
+                    }
+
+
+                    numEscena++;
+
+                  
+                    if(numEscena==1 || numEscena==2){
+                        $('body').css('background-image', "url(./img/fondo.png)");   
+                          
+                    }
+                    else{
+                         $('body').css('background-image', "url(./img/fondo"+numEscena+".jpg)");  
+                    }
+
+                    if(numEscena===5){
+                        $("#contenedor2").show("slow");  
+                    }
+                    if(numEscena>=6){
+                         numEscena=6; 
+                        $("#fondo"+numEscena+"").show("slow");    
+                        $('body').css('background-image', "url(./img/fondo"+numEscena+".jpg)");
+                          
+                    }
+                    $("#fondo"+numEscena+"").css("visibility", "visible");
+                    $("#fondo"+numEscena+"").fadeTo(1000,1); 
+                    $("#menu").show("slow");  
+                });
+
+    </script>
+
+    <script>
+        var face0=new Image()
+        face0.src="dado1.png"
+        var face1=new Image()
+        face1.src="dado2.png"
+        var face2=new Image()
+        face2.src="dado3.png"
+        var face3=new Image()
+        face3.src="dado4.png"
+        var face4=new Image()
+        face4.src="dado5.png"
+        var face5=new Image()
+        face5.src="dado6.png"
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

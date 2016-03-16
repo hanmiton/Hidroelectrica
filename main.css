@@ -1,0 +1,646 @@
+.padre-h1-c1-img{
+	background-position: center;
+}
+.padre-h1-c2{
+	width: 100%;
+	height: 42vh;
+}
+
+.padre-h2-img{
+	display: flex;
+	justify-content: space-between;
+}
+
+#img10contenedor{
+	width: 80%;
+	height: 75vh;	
+}
+
+.padre-h2-contenedor{
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+}
+
+#img7{
+	width: 50%;
+	height: 42vh;
+}
+
+
+#img10{
+	width: 80%;
+}
+
+#img101{
+	background-image: url(./img/img101.png);
+	width: 25%;
+	height: 70vh;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+}
+
+#img102{
+	background-image: url(./img/img102.png);
+	width: 25%;
+	height: 70vh;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+}
+
+#img7:hover{
+	background-image: url(./img/img71.png);
+}
+
+
+
+#padre-h1-c1{
+	width: 40%;
+	height: 42vh;
+}
+.latido{
+	animation: 1s latido infinite;
+}
+	@keyframes latido{
+   		0%{transform:scale(1)}
+  		50%{transform:scale(1.1)}
+   		90%{transform:scale(1)}
+	}
+.zoom{
+	transition : 0.3s;
+}
+	.zoom:hover{
+		transform: scale(1.2);
+}
+
+.oculto{	
+  	visibility: hidden;
+	opacity: 0;
+}
+
+#fondo3{
+	display: none;
+}
+
+.padre3-h1{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 85vh;
+}
+
+.padre3-h1-contenedor{
+	display: flex;
+	width: 70%;
+	height: 75vh;
+}
+
+.padre3-h1-contenedor-img1{
+	width: 50%;
+	height: 75vh;
+	background-image: url(./img/img11.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+}
+
+.padre3-h1-contenedor-img2{
+	width: 50%;
+	height: 75vh;
+	background-image: url(./img/img12.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+/*estilos del juego 3ra app*/
+
+#fondo4{
+	display: none;
+	width: 100%;
+	height: 85vh;
+}
+
+.padre4{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 85vh;
+}
+
+.padre4-row1{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 15vh;
+	margin: 1vh 0;
+}
+
+.padre4-row1-caja{
+	width: 10.2%;
+	height: 14vh;
+	margin: 0.5vh 0.5%;
+}
+
+.imagen-juego{
+	background-repeat: no-repeat;
+	background-size: 55%;
+}
+#i1{
+	background-image: url(./img/1.png);
+	
+}
+
+#i2{
+	background-image: url(./img/2.png);
+	
+}
+#i3{
+	background-image: url(./img/3.png);
+	
+}
+#i4{
+	background-image: url(./img/4.png);
+	
+}
+#i5{
+	background-image: url(./img/5.png);
+	
+}
+#i6{
+	background-image: url(./img/6.png);
+	
+}
+#i7{
+	background-image: url(./img/7.png);
+	
+}
+#i8{
+	background-image: url(./img/8.png);
+	
+}	
+
+#i9{
+	background-image: url(./img/9.png);
+	
+}
+
+#i10{
+	background-image: url(./img/10.png);
+	
+}
+#i11{
+	background-image: url(./img/11.png);
+	
+}
+#i12{
+	background-image: url(./img/12.png);
+	
+}
+#i13{
+	background-image: url(./img/13.png);
+	
+}
+#i14{
+	background-image: url(./img/14.png);
+	
+}
+#i15{
+	background-image: url(./img/15.png);	
+}
+#i16{
+	background-image: url(./img/16.png);
+}
+
+
+#i17{
+	background-image: url(./img/17.png);
+	
+}
+
+#i18{
+	background-image: url(./img/18.png);
+	
+}
+#i19{
+	background-image: url(./img/19.png);
+	
+}
+#i20{
+	background-image: url(./img/20.png);
+	
+}
+#i21{
+	background-image: url(./img/21.png);
+	
+}
+#i22{
+	background-image: url(./img/22.png);
+	
+}
+#i23{
+	background-image: url(./img/23.png);	
+}
+#i24{
+	background-image: url(./img/24.png);
+}
+
+
+#i25{
+	background-image: url(./img/25.png);
+	
+}
+
+#i26{
+	background-image: url(./img/26.png);
+	
+}
+#i27{
+	background-image: url(./img/27.png);
+	
+}
+#i28{
+	background-image: url(./img/28.png);
+	
+}
+#i29{
+	background-image: url(./img/29.png);
+	
+}
+#i30{
+	background-image: url(./img/30.png);
+	
+}
+#i31{
+	background-image: url(./img/31.png);	
+}
+#i32{
+	background-image: url(./img/32.png);
+}
+
+#i33{
+	background-image: url(./img/33.png);
+	
+}
+
+#i34{
+	background-image: url(./img/34.png);
+	
+}
+#i35{
+	background-image: url(./img/35.png);
+	
+}
+#i36{
+	background-image: url(./img/36.png);
+	
+}
+#i37{
+	background-image: url(./img/37.png);
+	
+}
+#i38{
+	background-image: url(./img/38.png);
+	
+}
+
+#i39-dado{
+	width: 60%;
+}
+
+.padre-h1{
+	justify-content: flex-start;
+
+}
+
+
+
+#padre-h1-c1{
+	background-image: url(./img/img1.png);	
+	width: 40%;
+	height: 70vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+
+#semaforo{
+	background-image: url(./img/img5.png);	
+	width: 25%;
+	height: 60vh;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 80%;
+}
+
+#smgs{
+	background-image: url(./img/img3.png);
+	width: 25%;
+	height: 60vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+
+#simg{
+
+	background-image: url(./img/img4.png);	
+	width: 25%;
+	height: 60vh;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 80%;	
+}
+
+.padre-nuevo{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+}
+
+.milenio1 {
+	width: 20%;
+	height: 20vh;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 80%;	
+}
+
+#milenio1{
+	background-image: url(./img/img13.png);		
+}
+
+#milenio2{
+	background-image: url(./img/img14.png);		
+}
+
+#oculto2{
+	width: 100%;
+	height: 30vh;
+}
+
+.pa3{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pa4{
+	width: 100%;
+	height: 65vh;
+}
+
+.pa4-h1-centrar{
+	width: 100%;
+	height: 65vh;
+	display: flex;
+	justify-content: center;
+	z-index: -1;
+}
+.pa4-h3-msg{
+	width: 9%;
+	height: 65vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(./img/img101.png);
+	margin-top: 6vh;
+	z-index: 0;
+}
+
+.pa4-h3-msg2{
+	width: 9%;
+	height: 65vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(./img/img104.png);
+	margin-top: 6vh;
+	z-index: 0;
+}
+
+.pa4-h2{
+	width: 9%;
+	height: 65vh;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(./img/hombre2.png);
+	margin-top: 6vh;
+	z-index: 1;
+}
+.pa4-h3{
+	width: 9%;
+	height: 65vh;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(./img/hombre.png);
+	margin-top: 6vh;
+	z-index: 1;
+}
+
+.pa4-h1{
+	width: 60%;
+	height: 65vh;
+	display: flex;
+	justify-content: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(./img/img10.jpg);
+	margin-top: 6vh;	
+}
+
+.pa4-h1-tur{
+	width: 20%;
+	height: 65vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(./img/turbina.png);	
+	visibility: hidden;
+}
+
+.pa4-h1-tur-sping{
+    margin-left: 15%;
+	width: 70%;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(./img/rueda.png);
+}
+
+
+.pa3-h1{
+	width: 100%;
+	height: 45vh;
+}
+
+.pa3-h2{
+	display: flex;
+
+	width: 100%;
+	height: 40vh;
+}
+
+.pa3-h2-msg{
+	width: 35%;
+	height: 40vh;
+	margin-left: 60%;
+	background-size: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('./img/img7.png');
+
+}
+
+ .rotateimg
+{
+-webkit-animation: rotate 5s linear infinite 0s;
+-moz-animation: rotate 5s linear infinite 0s;
+  -o-animation: rotate 5s linear infinite 0s;
+  -ms-animation: rotate 5s linear infinite 0s;
+  animation: rotate 5s linear infinite 0s;
+}
+ 
+@-webkit-keyframes rotate {
+ from {
+    -webkit-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+
+}
+
+#Escena1{
+	background-image: url(./img/1.jpg);
+}
+
+
+#Escena2{
+	background-image: url(./img/2.jpg);
+}
+
+#Escena3{
+	background-image: url(./img/3.jpg);
+}
+
+#Escena4{
+	background-image: url(./img/4.jpg);
+}
+
+#Escena5{
+	background-image: url(./img/5.jpg);
+}
+
+#Escena6{
+	background-image: url(./img/6.jpg);
+}
+
+.padre-contenedor-menuprueba{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	width:100%;
+	height:15vh;
+}
+
+.padremenu{
+	height: 15vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.padre-menuEscenas{
+	display:flex;
+	justify-content:space-between;
+	width:80%;
+	height:15vh
+}
+
+#tirar{
+
+	width: 80%;
+    height: 8vh;
+    background-size: 110%;
+	background-image: url(img/lanzar.png); 
+	background-repeat: no-repeat;
+	border-radius: 7px;
+	background-position: center;
+	box-shadow: 2px 2px 5px #999;
+}
+
+.padre-menuEscenas-Escena{
+	background-repeat:no-repeat;
+	width:10%;
+	height:10vh;
+	background-size:100%;
+	border-radius:7px;
+}
+
+#FlechaAtras{
+	background-image: url(./img/f1.png);
+	background-size: 50%;
+	background-position: center;
+}
+
+.padre-menuEscenas-Escena1{
+	background-image:url(img/f1.jpg);
+}
+
+.imgmenu{
+	background-size: 100%;
+}
+
+.padre-menuEscenas-Escena1{
+	background-image:url(img/f1.jpg);
+}
+
+#Escena1{
+	background-image: url(./img/1.jpg);
+}
+
+#Escena2{
+	background-image: url(./img/2.jpg);
+}
+
+#Escena3{
+	background-image: url(./img/3.jpg);
+}
+
+#Escena4{
+	background-image: url(./img/4.jpg);
+}
+
+#Escena5{
+	background-image: url(./img/5.jpg);
+}
+
+#Escena6{
+	background-image: url(./img/6.jpg);
+}
+
+
+
+#FlechaAdelante {
+    background-image: url(./img/f2.png);
+    background-size: 50%;
+    background-position: center;
+}
+
