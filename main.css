@@ -132,6 +132,73 @@
 	height: 85vh;
 }
 
+.padre44-hijo1-gota{
+	justify-content:center;
+	display:flex
+}
+
+.padre44-hijo2{
+	display:flex;
+	justify-content:center;
+	width:100%;
+	height:40vh
+}
+.padre44-hijo2-h1{
+	width:16.6%;
+	height:40vh;
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position:bottom
+}
+
+.padre44-hijo1-gota-msg{
+	background-size:80%;
+	background-position:bottom;
+	background-repeat:no-repeat
+}
+
+.padre44-hijo1-gota-img{
+	background-size:80%;
+	background-position:bottom;
+	background-repeat:no-repeat
+}
+
+.padre44-hijo1-gota{
+	width:70%;
+	height:45vh
+}
+
+.padre44-hijo1-gota-img{
+	width:35%;
+	height:45vh
+}
+
+.padre44-hijo1-gota-msg{
+	width:30%;
+	height:45vh
+}
+
+.padre44-hijo1{
+	width:100%;
+	height:35vh
+}
+
+.padre41{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;
+}
+
+.padre4-contenedor{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width:100%;
+	height:85vh
+}
+
+
 .padre4-row1{
 	display: flex;
 	justify-content: center;
@@ -642,5 +709,52 @@
     background-image: url(./img/f2.png);
     background-size: 50%;
     background-position: center;
+}
+
+
+#img30{
+	background-image:url(img/img30.png)
+}
+
+#img31{
+	background-image:url(img/img31.png)
+}
+
+#img32{
+	background-image:url(img/img32.png)
+}
+
+#img33{
+	background-image:url(img/img33.png)
+}
+#img34{
+	background-image:url(img/img34.png)
+}
+#img35{
+	background-image:url(img/img35.png)
+}
+#img36{
+	background-image:url(img/img36.png)
+}
+#img37{
+	background-image:url(img/img37.png)
+}
+#img32:hover{
+	background-image:url(img/img38.png)
+}
+#img33:hover{
+	background-image:url(img/img39.png)
+}
+#img34:hover{
+	background-image:url(img/img40.png)
+}
+#img35:hover{
+	background-image:url(img/img41.png)
+}
+#img36:hover{
+	background-image:url(img/img42.png)
+}
+#img37:hover{
+	background-image:url(img/img43.png)
 }
 
