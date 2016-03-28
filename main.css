@@ -174,7 +174,7 @@
 }
 
 .padre44-hijo1-gota-msg{
-	width:30%;
+	width:50%;
 	height:45vh
 }
 
@@ -455,7 +455,6 @@
 	width: 100%;
 	height: 85vh;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 }
 
@@ -553,21 +552,36 @@
 
 
 .pa3-h1{
-	width: 100%;
-	height: 45vh;
+	width: 60%;
+	height: 85vh;
+	display: flex;
 }
 
 .pa3-h2{
 	display: flex;
-
-	width: 100%;
-	height: 40vh;
+	width: 40%;
+	height: 85vh;
 }
 
-.pa3-h2-msg{
+
+.pa3-h1-ventana1{
+	width: 55%;
+	height: 85vh;
+}
+
+.pa3-h1-ventana2{
 	width: 35%;
-	height: 40vh;
-	margin-left: 60%;
+	height: 85vh;
+	background-size: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('./img/ventana2.jpg');
+}
+
+
+.pa3-h2-msg{
+	width: 80%;
+	height: 85vh;
 	background-size: 70%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -646,7 +660,7 @@
 	width: 80%;
     height: 8vh;
     background-size: 110%;
-	background-image: url(img/lanzar.png); 
+	background-image: url(img/clic.png); 
 	background-repeat: no-repeat;
 	border-radius: 7px;
 	background-position: center;
@@ -713,11 +727,11 @@
 
 
 #img30{
-	background-image:url(img/img30.png)
+	background-image:url(img/img11.png)
 }
 
 #img31{
-	background-image:url(img/img31.png)
+	background-image:url(img/img12.png)
 }
 
 #img32{
@@ -758,3 +772,112 @@
 	background-image:url(img/img43.png)
 }
 
+.padre6{
+	display:none;
+	flex-direction:column;
+	width:100%;
+	height:85vh
+}
+
+#formulario2{
+	z-index: 10;
+}
+
+
+.ruleta{
+	display: flex;
+	justify-content: center;
+	width:45%;
+	height:100vh;
+	background-size:100%;
+	background-repeat: no-repeat;
+
+}
+
+.txtTorre{
+	background-image:url(img/txtTorre.png);
+	margin-top: 20vh;
+	width:45%;
+	height:60vh;
+	background-size:80%;
+	background-repeat: no-repeat;
+}
+
+.ruleta-hor{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 33%;
+	height: 100vh;	
+}
+
+.ruleta-ver{
+	background-size: 100%;
+	background-position-x: 50%;
+    background-position-y: 20%;
+	background-repeat: no-repeat;
+	
+	width: 100%;
+	height: 40vh;
+}
+
+#ruleta-ver-cen{
+	background-image:url(img/clic.png);
+}
+
+#ruleta-ver-der{
+	background-image:url(img/flecha.png);
+}
+
+
+#yes{
+	width: 50%;
+    height: 40vh;
+	background-image:url(img/SI.png);
+}
+
+#no{
+	width: 50%;
+    height: 40vh;
+	background-image:url(img/NO.png);
+}
+
+
+#pregunta{
+	margin-top: 10%;
+	width: 70%;
+    height: 40vh;
+	background-size: 50%;
+	background-image: url(./img/puntaje.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#pregunta2{
+	margin-top: 10%;
+	width: 70%;
+    height: 26vh;
+	background-size: 50%;
+	background-image: url(./img/puntaje.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#pregunta3{
+	width: 70%;
+    height: 26vh;
+	background-size: 10%;
+	background-image: url(./img/num/0.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+#inicio{
+	width: 70%;
+    height: 26vh;
+	background-size: 10%;
+	background-image: url(./img/inicio.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+}

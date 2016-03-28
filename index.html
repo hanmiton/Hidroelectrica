@@ -5,7 +5,10 @@
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="main.css" rel="stylesheet"/>
+
 	<style>.menu,.menu-escenas{width:100%;height:15vh;display:flex}body{background:url(./img/fondo.png) no-repeat #000;background-size:cover;margin:0}.imagen,.menu-escenas-escena{background-repeat:no-repeat;background-size:90%}.menu{justify-content:center}.menu-escenas{justify-content:center}.menu-escenas-escena{width:8%;height:13vh;border-radius:6px}.padreform{display:flex;flex-direction:column;width:100%;height:100vh;background: rgba(0,0,0,0.5)}.padreform-encabezado{display:flex;justify-content:center;width:100%;height:30vh}.padreform-encabezado-titulo{background-image:url(./img/titulo.png);background-position: center;width:40%;height:35vh;background-size:90%;opacity:1}.padreform-robot{display:flex;justify-content:center;width:100%;height:50vh}.padreform-robot-img{background-image:url(./img/robot.png);background-position: top;width:60%;height:50vh;background-size:80%}#EElogo1,.padreform-nombre-campo-logo1{background-image:url(./img/eelogo1.png)}.padreform-llenar{width:100%;height:20vh;display:flex;justify-content:center}.padre,.padreform-nombre{display:flex;flex-direction:column}.padreform-nombre{width:25%;height:15vh;justify-content:space-between}.padreform-nombre-campo{display:flex;justify-content:space-around;width:100%;height:8vh}.padreform-nombre-campo-logo1{width:15%;height:8vh;background-repeat:no-repeat;background-size:100%;border-radius: 2px}.padreform-nombre-boton{width:100%;height:5vh;border-radius:6px}.padreform-nombre-boton2{width:25%;height:5vh;border-radius:6px}#EElogo2{background-image:url(./img/eelogo2.png);background-size:100%;width: 25%}.padre-h1-c1-img,.padre-h2-img{background-repeat:no-repeat;background-size:80%}.padre{justify-content:center;width:100%;height:85vh}.padre-h1,.padre-h1-c1{justify-content:center;display:flex}.padre-h1{width:100%;height:55vh}.padre-h1-c1{width:70%;height:70vh}.padre-h1-c1-img{width:50%;height:42vh}.padre-h2{display:flex;justify-content:center;width:100%;height:85vh}.padre-h2-img{width:30%;height:85vh}#fond,#fondo,#menu{display:none}#img1{background-image:url(./img/img1.png)}#img2{background-image:url(./img/img2.png)}#img3{background-image:url(./img/img3.png)}#img4{background-image:url(./img/img4.png)}#img5{background-image:url(./img/img5.png)}#img6{background-image:url(./img/img6.png)}#img7{background-image:url(./img/img7.png)}#img8{background-image:url(./img/img8.png)}#img9{background-image:url(./img/img9.png)}#img10{background-image:url(./img/img10.png);width:75%;height:75vh;background-position:center}</style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 </head>
 <body>
 	<!--seccoin formulario-->
@@ -115,10 +118,66 @@
         </div>
     </section>
 
+    <div hidden id="formulario4">
+        <section class="padreform">
+            <div class="padreform-robot">
+                <div id="pregunta2" class="padreform-robot-img">
+                </div>
+
+            </div>
+             <div class="padreform-robot">
+                <div id="pregunta3" class="padreform-robot-img">
+                </div> 
+            </div>
+             <div class="padreform-robot">
+                <div id="inicio" class="padreform-robot-img">
+                </div> 
+            </div>
+            <div id="compartir">
+                <div class="centro-face">
+                    <div id="facebook" class="fb-share-button bt-front opacidad" data-href="https://apps.facebook.com/534119083428011/" data-layout="button_count">
+                  </div>
+                </div>  
+            </div>
+            <!--<div class="padreform-llenar">
+                <div class="padreform-nombre">
+                    <div class="padreform-nombre-campo">
+                        <div id="yes2" class="padreform-nombre-campo-logo1">
+                        </div>
+                        <div id="no2" class="padreform-nombre-campo-logo1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->  
+        </section>
+    </div>
+    <div hidden id="formulario3">
+        <section class="padreform">
+            <div class="padreform-robot">
+                <div id="pregunta" class="padreform-robot-img">
+                </div>
+            </div>
+            <div class="padreform-llenar">
+                <div class="padreform-nombre">
+                    <div class="padreform-nombre-campo">
+                        <div id="yes" class="padreform-nombre-campo-logo1">
+                        </div>
+                        <div id="no" class="padreform-nombre-campo-logo1">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </div>
      <!--Escena numero 3-->
     <section hidden id="fondo3">
         <div class="pa3">
             <div class="pa3-h1">
+                <div class="pa3-h1-ventana1">
+                </div>
+                <div id="ventana" class="pa3-h1-ventana2">
+                </div>
             </div>
             <div class="pa3-h2">
                 <div id="enchufe" class="pa3-h2-msg latido zoom"></div>
@@ -196,14 +255,85 @@
                         <input id="tirar" type="button" onClick="lanzar()">
                     </form>
                         <script>
+                    
+ var num=0;
                         var dado=0;
+                        var data = [
+                    {"label":"Pregunta 1",  "value":1 ,  "question":"./img/preguntas/1.png" , "res":true}, // SI
+                    {"label":"Pregunta 2",  "value":1,  "question":"./img/preguntas/2.png" , "res":false}, //SI
+                    {"label":"Pregunta 3",  "value":1,  "question":"./img/preguntas/3.png" , "res":true}, //si
+                    {"label":"Pregunta 4",  "value":1,  "question":"./img/preguntas/4.png" , "res":false}, //No
+                    {"label":"Pregunta 5",  "value":1,  "question":"./img/preguntas/5.png" , "res":true}, 
+                    {"label":"Pregunta 6",  "value":1,  "question":"./img/preguntas/6.png" , "res":true}, //Todos los ecuatorianos representatos a través del estado
+                    {"label":"Pregunta 7",  "value":1,  "question":"./img/preguntas/7.png" , "res":true}, //No
+                    {"label":"Pregunta 8",  "value":1,  "question":"./img/preguntas/8.png" , "res":true}, //Desaarrollo, rosperidad y bienestar
+                    {"label":"Pregunta 9",  "value":1,  "question":"./img/preguntas/9.png" , "res":true},//si 
+                    {"label":"Pregunta 10", "value":1, "question":"./img/preguntas/10.png" , "res":true},//si
+        ];
+                        var punt=0;
+                                
                         function lanzar()
                             {
-                                var randomdice=Math.round(Math.random()*5);
-                                document.images["mydice"].src=eval("face"+randomdice+".src");
+                                num;
+                                var ramdomdice=0;
+                               
+                                    randomdice=Math.round(Math.random()*5); 
+                                    document.images["mydice"].src=eval("face"+randomdice+".src");
+                                
+                                
+
                                 dado=dado+randomdice+1;
                                 $("#i"+dado).addClass("latido");
+                                $('#i'+dado).click(function(){
+                                    $("#i"+dado).removeClass("latido");
+                                    $("#fondo6").hide("slow"); 
+                                    $("#formulario3").show("slow"); 
+                                    $("#pregunta").css("background-image","url(./img/preguntas/"+num+".png)");  
+                                });
+
+                               num++;
+                               console.log(punt);
+                                if(dado>28){
+
+                                    $("#fondo6").hide("slow"); 
+                                    $("#formulario4").show("slow"); 
+                                    $("#pregunta3").css("background-image","url(./img/num/"+punt+".png)"); 
+                                    
+                                }
+                                
+
                             }
+
+                                $('#yes').click(function(){
+                                    /*Ocultar escenas excepto la 2*/  
+                                    $("#formulario3").hide("slow");
+                                    $("#fondo6").show("slow"); 
+                                    $("#menu").show("slow");
+
+                                    if(data[num-1].res){
+                                        punt++;  
+                                    }
+                                    //punt++;
+                                          
+                                    
+
+                                });
+
+                                $('#no').click(function(){
+                                    /*Ocultar escenas excepto la 2*/  
+                                    $("#formulario3").hide("slow");
+                                    $("#fondo6").show("slow"); 
+                                    $("#menu").show("slow");  
+
+                                    if(!data[num-1].res){
+                                        punt++;
+                                    }
+
+                                    console.log(punt);
+                                    
+                                });
+
+
                         </script>
                 </div>
                 <div id= "i39" class="padre4-row1-caja imagen-juego">
@@ -255,6 +385,42 @@
     </section>
 
   
+
+    <section hidden id="fondo7" class="padre6 oculto">
+        <!--esto contendra la explicacion del codigo-->
+        <section id="formulario2" class="padreform">
+            <div class="padreform-robot">
+                <div class="ruleta"> 
+                    <div class="ruleta-hor">
+                        <div class="ruleta-ver">   
+                        </div>
+                    </div>
+                     <div class="ruleta-hor">
+                        <div id="ruleta-ver-cen" class="ruleta-ver">   
+                        </div>
+                    </div>
+                    <div class="ruleta-hor">
+                        <div id="ruleta-ver-der" class="ruleta-ver">   
+                        </div>
+                    </div>
+
+                </div>
+                <div class="txtTorre">
+                </div>
+            </div>
+            <div class="padreform-llenar">
+                <div class="padreform-nombre">
+                    <div class="padreform-nombre-campo">
+                      
+                    </div>
+                    <button id="comenzar2" class="padreform-nombre-boton">Comenzar</button>
+                </div>
+            </div>  
+        </section>
+    </section>
+
+
+
 	<!--Parte del menu de la app-->
 	<section id="menu" class="padre-contenedor-menuprueba">
 
@@ -285,12 +451,18 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	
-  	<script>!function o(n,i,e){function d(s,c){if(!i[s]){if(!n[s]){var r="function"==typeof require&&require;if(!c&&r)return r(s,!0);if(f)return f(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var u=i[s]={exports:{}};n[s][0].call(u.exports,function(o){var i=n[s][1][o];return d(i?i:o)},u,u.exports,o,n,i,e)}return i[s].exports}for(var f="function"==typeof require&&require,s=0;s<e.length;s++)d(e[s]);return d}({1:[function(o,n,i){$(document).ready(function(){$("#comenzar").click(function(){$("#formulario").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").css("visibility","visible"),$("#menu").fadeTo(1e3,1)})}),$(document).ready(function(){$("#img8").click(function(){$("#img8, #img9").hide("slow")})}),$(document).ready(function(){$("#Escena1").click(function(){
-
-        $("#fondo5").hide("slow"),
-        $("body").css("background-image","url(./img/fondo.png)"),$("#fondo2").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena2").click(function(){
+  	<script>!function o(n,i,e){function d(s,c){if(!i[s]){if(!n[s]){var r="function"==typeof require&&require;if(!c&&r)return r(s,!0);if(f)return f(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var u=i[s]={exports:{}};n[s][0].call(u.exports,function(o){var i=n[s][1][o];return d(i?i:o)},u,u.exports,o,n,i,e)}return i[s].exports}for(var f="function"==typeof require&&require,s=0;s<e.length;s++)d(e[s]);return d}({1:[function(o,n,i){$(document).ready(function(){$("#comenzar").click(function(){$("#formulario").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").css("visibility","visible"),$("#menu").fadeTo(1e3,1)})}),$(document).ready(function(){$("#img8").click(function(){$("#img8, #img9").hide("slow")})}),
+        $(document).ready(function(){
+            $("#Escena1, #inicio").click(function(){
+              $("#formulario4").hide("slow"),
+   
+            $("#fondo7").hide("slow"),
+            $("#fondo5").hide("slow"),
+            $("body").css("background-image","url(./img/fondo.png)"),$("#fondo2").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena2").click(function(){
+             $("#fondo7").hide("slow"),
                 $("#fondo5").hide("slow"),
                 $("body").css("background-image","url(./img/fondo.png)"),$("#fondo").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo2").css("visibility","visible"),$("#fondo2").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena3").click(function(){
+                     $("#fondo7").hide("slow"),
                     $("#fondo5").hide("slow"),
                     $("body").css("background-image","url(./img/fondo3.jpg)"),$("#fondo").hide("slow"),$("#fondo2").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo3").css("visibility","visible"),$("#fondo3").fadeTo(1e3,1),$("#menu").show("slow")})})},{}]},{},[1]);</script>
   	
@@ -312,12 +484,14 @@
                 $("#unidades").show("slow");
             });
 /*cambio pantalla 2*/
+
+
     $(document).ready(function(){
         $('#Escena4').click(function(){
             /*Ocultar escenas excepto la 2*/
-
+             $("#fondo7").hide("slow"),
             $("#fondo5").hide("slow"),
-            $("body").css('background-image','url(./img/fondo4.jpg')    
+            $("body").css('background-image','url(./img/fondo4.jpg')    ;
             $("#fondo").hide("slow");
             $("#fondo2").hide("slow");
             $("#fondo3").hide("slow");
@@ -329,11 +503,16 @@
         });
     });
 
+    $("#enchufe").click(function(){
+                $("#ventana").css('background-image','url(./img/ventana1.jpg')  ;
+                
+            });
 
     $(document).ready(function(){
         $('#Escena5').click(function(){
             /*Ocultar escenas excepto la 2*/
-            $("body").css('background-image','url(./img/fondo5.jpg')    
+            $("body").css('background-image','url(./img/fondo5.jpg')    ;
+                 $("#fondo7").hide("slow"),
             $("#fondo").hide("slow");
             $("#fondo2").hide("slow");
             $("#fondo3").hide("slow");
@@ -345,6 +524,20 @@
         });
     });
 
+     $('#comenzar2').click(function(){
+            /*Ocultar escenas excepto la 2*/    
+            $("#fondo").hide("slow");
+            $("#fondo2").hide("slow");
+            $("#fondo3").hide("slow");
+            $("#fondo4").hide("slow");
+            $("#fondo5").hide("slow");
+            $("#fondo7").hide("slow");
+            $("#fondo6").css("visibility", "visible");
+            $("#fondo6").fadeTo(1000,1);
+            $("#formulario4").css("visibility","visible"), 
+            $("#menu").show("slow");  
+        });
+
     $(document).ready(function(){
         $('#Escena6').click(function(){
             /*Ocultar escenas excepto la 2*/
@@ -354,8 +547,8 @@
             $("#fondo3").hide("slow");
             $("#fondo4").hide("slow");
             $("#fondo5").hide("slow");
-            $("#fondo6").css("visibility", "visible");
-            $("#fondo6").fadeTo(1000,1); 
+            $("#fondo7").css("visibility", "visible");
+            $("#fondo7").fadeTo(1000,1); 
             $("#menu").show("slow");  
         });
     });
@@ -364,9 +557,22 @@
         $('#padre-h1-c1').click(function(){
             /*Ocultar escenas excepto la 2*/
             $("#padre-h1-c1").removeClass('latido'); 
+            $("#FlechaAdelante").addClass('latido'); 
+            
             
         });
     });
+
+    $(document).ready(function(){
+        $('#milenio1 , #milenio2').click(function(){
+            /*Ocultar escenas excepto la 2*/
+    
+            $("#FlechaAdelante").addClass('latido'); 
+            
+            
+        });
+    });
+
 
       $(document).ready(function(){
         $('#milenio1, #milenio2').click(function(){
