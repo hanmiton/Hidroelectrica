@@ -58,7 +58,7 @@
 
 
 #padre-h1-c1{
-	width: 40%;
+	width: 25%;
 	height: 42vh;
 }
 .latido{
@@ -388,17 +388,27 @@
 
 #padre-h1-c1{
 	background-image: url(./img/img1.png);	
-	width: 40%;
-	height: 70vh;
+	width: 25%;
+	height: 42vh;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80%;
 }
 
+#padre-h1-c2{
+	background-image: url(./img/txt1.png);	
+	width: 25%;
+	height: 42vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+
+
 #semaforo{
 	background-image: url(./img/img5.png);	
 	width: 25%;
-	height: 60vh;
+	height: 42vh;
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: 80%;
@@ -407,7 +417,7 @@
 #smgs{
 	background-image: url(./img/img3.png);
 	width: 25%;
-	height: 60vh;
+	height: 42vh;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80%;
@@ -417,21 +427,22 @@
 
 	background-image: url(./img/img4.png);	
 	width: 25%;
-	height: 60vh;
+	height: 42vh;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-size: 80%;	
+	background-size: 70%;	
 }
 
 .padre-nuevo{
 	width: 100%;
-	height: 30vh;
+	height: 42vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
 .milenio1 {
-	width: 20%;
+	width: 70%;
 	height: 20vh;
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -447,7 +458,7 @@
 }
 
 #oculto2{
-	width: 100%;
+	width: 25%;
 	height: 30vh;
 }
 
