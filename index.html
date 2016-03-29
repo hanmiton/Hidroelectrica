@@ -285,14 +285,14 @@
                         var dado=0;
                         var data = [
                     {"label":"Pregunta 1",  "value":1 ,  "question":"./img/preguntas/1.png" , "res":true}, // SI
-                    {"label":"Pregunta 2",  "value":1,  "question":"./img/preguntas/2.png" , "res":false}, //SI
-                    {"label":"Pregunta 3",  "value":1,  "question":"./img/preguntas/3.png" , "res":true}, //si
-                    {"label":"Pregunta 4",  "value":1,  "question":"./img/preguntas/4.png" , "res":false}, //No
-                    {"label":"Pregunta 5",  "value":1,  "question":"./img/preguntas/5.png" , "res":true}, 
+                    {"label":"Pregunta 2",  "value":1,  "question":"./img/preguntas/2.png" , "res":true}, //SI
+                    {"label":"Pregunta 3",  "value":1,  "question":"./img/preguntas/3.png" , "res":false}, //si
+                    {"label":"Pregunta 4",  "value":1,  "question":"./img/preguntas/4.png" , "res":true}, //No
+                    {"label":"Pregunta 5",  "value":1,  "question":"./img/preguntas/5.png" , "res":false}, 
                     {"label":"Pregunta 6",  "value":1,  "question":"./img/preguntas/6.png" , "res":true}, //Todos los ecuatorianos representatos a través del estado
-                    {"label":"Pregunta 7",  "value":1,  "question":"./img/preguntas/7.png" , "res":true}, //No
-                    {"label":"Pregunta 8",  "value":1,  "question":"./img/preguntas/8.png" , "res":true}, //Desaarrollo, rosperidad y bienestar
-                    {"label":"Pregunta 9",  "value":1,  "question":"./img/preguntas/9.png" , "res":true},//si 
+                    {"label":"Pregunta 7",  "value":1,  "question":"./img/preguntas/7.png" , "res":false}, //No
+                    {"label":"Pregunta 8",  "value":1,  "question":"./img/preguntas/8.png" , "res":false}, //Desaarrollo, rosperidad y bienestar
+                    {"label":"Pregunta 9",  "value":1,  "question":"./img/preguntas/9.png" , "res":false},//si 
                     {"label":"Pregunta 10", "value":1, "question":"./img/preguntas/10.png" , "res":true},//si
         ];
                         var punt=0;
@@ -457,8 +457,6 @@
                     </div>
                     <div id="Escena1" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu">
                     </div>
-                    <div id="Escena2"  class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu">
-                    </div>
                     <div id="Escena3"  class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu">
                     </div>
                     <div id="Escena4" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1 imgmenu" >
@@ -479,6 +477,7 @@
   	<script>!function o(n,i,e){function d(s,c){if(!i[s]){if(!n[s]){var r="function"==typeof require&&require;if(!c&&r)return r(s,!0);if(f)return f(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var u=i[s]={exports:{}};n[s][0].call(u.exports,function(o){var i=n[s][1][o];return d(i?i:o)},u,u.exports,o,n,i,e)}return i[s].exports}for(var f="function"==typeof require&&require,s=0;s<e.length;s++)d(e[s]);return d}({1:[function(o,n,i){$(document).ready(function(){$("#comenzar").click(function(){$("#formulario").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").css("visibility","visible"),$("#menu").fadeTo(1e3,1)})}),$(document).ready(function(){$("#img8").click(function(){$("#img8, #img9").hide("slow")})}),
         $(document).ready(function(){
             $("#Escena1, #inicio").click(function(){
+                $("#seg").hide("slow"); 
               $("#formulario4").hide("slow"),
    
             $("#fondo7").hide("slow"),
@@ -487,6 +486,7 @@
              $("#fondo7").hide("slow"),
                 $("#fondo5").hide("slow"),
                 $("body").css("background-image","url(./img/fondo.png)"),$("#fondo").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo2").css("visibility","visible"),$("#fondo2").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena3").click(function(){
+                    $("#ventana").css('background-image','url(./img/ventana2.jpg')  ;
                      $("#fondo7").hide("slow"),
                     $("#fondo5").hide("slow"),
                     $("body").css("background-image","url(./img/fondo3.jpg)"),$("#fondo").hide("slow"),$("#fondo2").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo3").css("visibility","visible"),$("#fondo3").fadeTo(1e3,1),$("#menu").show("slow")})})},{}]},{},[1]);</script>
@@ -536,6 +536,7 @@
     $(document).ready(function(){
         $('#Escena5').click(function(){
             /*Ocultar escenas excepto la 2*/
+             $("#unidades").hide("slow");
             $("body").css('background-image','url(./img/fondo5.jpg')    ;
                  $("#fondo7").hide("slow"),
             $("#fondo").hide("slow");
@@ -653,10 +654,13 @@ numEscena=1;
                     if(numEscena===5){
                         $("#FlechaAdelante").css("visibility","hidden");
                     }
-                    /*funcion de las flechas*/
-                    if(numEscena==1){
-                        $("#fondo").hide("slow");    
+                    if(numEscena===1){
+                     $("#fondo").hide("slow");   
+                      numEscena=2;
+
                     }
+                    /*funcion de las flechas*/
+
                     else{
                         $("#fondo"+numEscena+"").hide("slow");   
                     }
