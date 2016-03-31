@@ -537,7 +537,7 @@
 }
 
 .pa4-h1-tur{
-	width: 20%;
+	width: 100%;
 	height: 65vh;
 	display: flex;
 	flex-direction: column;
@@ -547,6 +547,11 @@
 	background-size: 100%;
 	background-image: url(./img/turbina.png);	
 	visibility: hidden;
+}
+
+#turbina2{
+	width: 20%;
+	height: 65vh;
 }
 
 .pa4-h1-tur-sping{
@@ -681,7 +686,7 @@
 .padre-menuEscenas-Escena{
 	background-repeat:no-repeat;
 	width:10%;
-	height:10vh;
+	height:14vh;
 	background-size:100%;
 	border-radius:7px;
 }

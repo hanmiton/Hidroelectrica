@@ -43,13 +43,13 @@
                 </div> 
                 <div id="padre-h1-c1" class="latido">
                 </div>   
-                <div id="padre-h1-c2">
+                <div hidden id="padre-h1-c2" class="zoom">
                 </div> 
             </div>
             
             <div hidden id="seg">
                  <div  class="padre-h1">
-                 <div id="smgs" class="zoom">
+                 <div hidden id="smgs" class="zoom">
                 </div> 
                 <div id="simg" class="latido">
                 </div>
@@ -127,17 +127,20 @@
                 <div  hidden id="cas2"class="pa4-h3-msg zoom">
                 </div>
                 <div id="cascada" class="pa4-h1 latido">
-                        <div  class="pa4-h1-tur">
+                        <div hidden id="turbina2">
+                             <div   class="pa4-h1-tur">
                             <div class="pa4-h1-tur-sping rotateimg">
                             
                             </div>
                         </div> 
+                        </div>
+                       
                     
                    
                 </div>
                 <div hidden  id="cas3"class="pa4-h3-msg2 zoom">
                 </div>
-                <div  hidden id="cas4"class="pa4-h2 latido">
+                <div  hidden id="cas41" class="pa4-h2 latido">
                 </div>
             </div>
         </div>
@@ -475,9 +478,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	
   	<script>!function o(n,i,e){function d(s,c){if(!i[s]){if(!n[s]){var r="function"==typeof require&&require;if(!c&&r)return r(s,!0);if(f)return f(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var u=i[s]={exports:{}};n[s][0].call(u.exports,function(o){var i=n[s][1][o];return d(i?i:o)},u,u.exports,o,n,i,e)}return i[s].exports}for(var f="function"==typeof require&&require,s=0;s<e.length;s++)d(e[s]);return d}({1:[function(o,n,i){$(document).ready(function(){$("#comenzar").click(function(){$("#formulario").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").css("visibility","visible"),$("#menu").fadeTo(1e3,1)})}),$(document).ready(function(){$("#img8").click(function(){$("#img8, #img9").hide("slow")})}),
+        
         $(document).ready(function(){
             $("#Escena1, #inicio").click(function(){
                 $("#seg").hide("slow"); 
+                $("#FlechaAdelante").css("visibility","visible"); 
               $("#formulario4").hide("slow"),
    
             $("#fondo7").hide("slow"),
@@ -504,14 +509,52 @@
     <script>
 
 
-     $("#img30").click(function(){
-                $("#img30").removeClass("latido");
-                $("#unidades").show("slow");
-            });
+     
+
+
 /*cambio pantalla 2*/
 
 
     $(document).ready(function(){
+
+
+        $("#img30").click(function(){
+                $("#img30").removeClass("latido");
+                $("#unidades").show("slow");
+                $("#FlechaAdelante").css('background-size',"80%"); 
+                $("#FlechaAdelante").addClass('latido'); 
+            });
+
+        $("#simg").click(function(){
+                $("#smgs").show("slow");
+                $("#FlechaAdelante").css('background-size',"80%"); 
+                $("#FlechaAdelante").addClass('latido'); 
+            });
+     
+        $("#cascada").click(function(){
+                console.log("hola");
+                $("#cas1").show("slow");
+                $("#cas41").css("opacity",0);
+                $("#cas41").show("slow");
+             
+        });
+
+        $("#cas1").click(function(){
+                $("#cas41").css("opacity",1);
+                //$("#cas2").show("slow");
+                $("#cas3").css("opacity",0);
+                $("#cas3").show("slow");
+                  
+            });
+
+         $("#cas41").click(function(){
+                $("#cas3").css("opacity",1);
+                $("#turbina2").show("slow"); 
+                $("#FlechaAdelante").css('background-size',"80%"); 
+                $("#FlechaAdelante").addClass('latido');     
+            });
+
+
         $('#Escena4').click(function(){
             /*Ocultar escenas excepto la 2*/
              $("#fondo7").hide("slow"),
@@ -529,16 +572,23 @@
     });
 
     $("#enchufe").click(function(){
-                $("#ventana").css('background-image','url(./img/ventana1.jpg')  ;
-                
+              $("#ventana").addClass("latido");
+              //  $("#ventana").css('background-image','url(./img/ventana1.jpg')  ;      
             });
+
+    $("#ventana").click(function(){
+        $("#ventana").css('background-image','url(./img/ventana1.jpg')  ;  
+        $("#ventana").removeClass("latido");
+          $("#FlechaAdelante").css('background-size',"80%"); 
+                $("#FlechaAdelante").addClass('latido'); 
+               });
 
     $(document).ready(function(){
         $('#Escena5').click(function(){
             /*Ocultar escenas excepto la 2*/
              $("#unidades").hide("slow");
             $("body").css('background-image','url(./img/fondo5.jpg')    ;
-                 $("#fondo7").hide("slow"),
+            $("#fondo7").hide("slow"),
             $("#fondo").hide("slow");
             $("#fondo2").hide("slow");
             $("#fondo3").hide("slow");
@@ -584,7 +634,9 @@
             /*Ocultar escenas excepto la 2*/
             $("#seg").show("slow"); 
             $("#padre-h1-c1").removeClass('latido'); 
-            $("#FlechaAdelante").addClass('latido'); 
+            
+            
+            $("#padre-h1-c2").show('slow'); 
             
             
         });
@@ -650,7 +702,7 @@ numEscena=1;
 
                     $("#FlechaAdelante").removeClass("latido");
                     $("#FlechaAtras").css("visibility","visible");
-                   
+                    $("#FlechaAdelante").css('background-size',"50%"); 
                     if(numEscena===5){
                         $("#FlechaAdelante").css("visibility","hidden");
                     }
