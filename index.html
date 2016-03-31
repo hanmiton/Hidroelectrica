@@ -122,9 +122,9 @@
         <div class="pa4">
             <div class="pa4-h1-centrar">
                 
-                <div hidden id="cas1"class="pa4-h3 latido">
+                <div hidden id="cas11"class="pa4-h3 latido">
                 </div>
-                <div  hidden id="cas2"class="pa4-h3-msg zoom">
+                <div  hidden id="cas21"class="pa4-h3-msg zoom">
                 </div>
                 <div id="cascada" class="pa4-h1 latido">
                         <div hidden id="turbina2">
@@ -138,7 +138,7 @@
                     
                    
                 </div>
-                <div hidden  id="cas3"class="pa4-h3-msg2 zoom">
+                <div hidden  id="cas31"class="pa4-h3-msg2 zoom">
                 </div>
                 <div  hidden id="cas41" class="pa4-h2 latido">
                 </div>
@@ -477,10 +477,17 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	
-  	<script>!function o(n,i,e){function d(s,c){if(!i[s]){if(!n[s]){var r="function"==typeof require&&require;if(!c&&r)return r(s,!0);if(f)return f(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var u=i[s]={exports:{}};n[s][0].call(u.exports,function(o){var i=n[s][1][o];return d(i?i:o)},u,u.exports,o,n,i,e)}return i[s].exports}for(var f="function"==typeof require&&require,s=0;s<e.length;s++)d(e[s]);return d}({1:[function(o,n,i){$(document).ready(function(){$("#comenzar").click(function(){$("#formulario").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").css("visibility","visible"),$("#menu").fadeTo(1e3,1)})}),$(document).ready(function(){$("#img8").click(function(){$("#img8, #img9").hide("slow")})}),
+  	<script>!function o(n,i,e){function d(s,c){if(!i[s]){if(!n[s]){var r="function"==typeof require&&require;if(!c&&r)return r(s,!0);if(f)return f(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var u=i[s]={exports:{}};n[s][0].call(u.exports,function(o){var i=n[s][1][o];return d(i?i:o)},u,u.exports,o,n,i,e)}return i[s].exports}for(var f="function"==typeof require&&require,s=0;s<e.length;s++)d(e[s]);return d}({1:[function(o,n,i){$(document).ready(function(){$("#comenzar").click(function(){
+        $("#FlechaAtras").css("visibility","hidden"),
+        $("#formulario").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").css("visibility","visible"),$("#menu").fadeTo(1e3,1)})}),$(document).ready(function(){$("#img8").click(function(){$("#img8, #img9").hide("slow")})}),
         
         $(document).ready(function(){
             $("#Escena1, #inicio").click(function(){
+                numEscena=1;
+                 $("#padre-h1-c2").hide("slow"),
+                 $("#smgs").hide("slow"),
+                 $("#oculto2").hide("slow"),
+                 
                 $("#seg").hide("slow"); 
                 $("#FlechaAdelante").css("visibility","visible"); 
               $("#formulario4").hide("slow"),
@@ -488,24 +495,19 @@
             $("#fondo7").hide("slow"),
             $("#fondo5").hide("slow"),
             $("body").css("background-image","url(./img/fondo.png)"),$("#fondo2").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo").css("visibility","visible"),$("#fondo").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena2").click(function(){
+              numEscena=2;  
              $("#fondo7").hide("slow"),
                 $("#fondo5").hide("slow"),
                 $("body").css("background-image","url(./img/fondo.png)"),$("#fondo").hide("slow"),$("#fondo3").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo2").css("visibility","visible"),$("#fondo2").fadeTo(1e3,1),$("#menu").show("slow")})}),$(document).ready(function(){$("#Escena3").click(function(){
+                    numEscena=3;
+
+                     
                     $("#ventana").css('background-image','url(./img/ventana2.jpg')  ;
                      $("#fondo7").hide("slow"),
                     $("#fondo5").hide("slow"),
                     $("body").css("background-image","url(./img/fondo3.jpg)"),$("#fondo").hide("slow"),$("#fondo2").hide("slow"),$("#fondo4").hide("slow"),$("#fondo5").hide("slow"),$("#fondo6").hide("slow"),$("#fondo3").css("visibility","visible"),$("#fondo3").fadeTo(1e3,1),$("#menu").show("slow")})})},{}]},{},[1]);</script>
   	
 
-  	<script>
-        window.onload = function() {
-            document.onmousemove = function(e) {
-                var x = -(e.clientX/40);
-                var y = -(e.clientY/40);
-                this.body.style.backgroundPosition = x + 'px ' + y + 'px';
-            };
-        };
-  	</script>
     <script>
 
 
@@ -518,7 +520,31 @@
     $(document).ready(function(){
 
 
-        $("#img30").click(function(){
+        
+
+        $('#Escena4').click(function(){
+            /*Ocultar escenas excepto la 2*/
+            numEscena=4;
+                     $("#cas21").hide("slow"),
+                     $("#cas41").hide("slow"),
+                     $("#cas31").hide("slow"),
+                $("#turbina2").hide("slow");    
+             $("#fondo7").hide("slow"),
+            $("#fondo5").hide("slow"),
+            $("body").css('background-image','url(./img/fondo4.jpg')    ;
+            $("#fondo").hide("slow");
+            $("#fondo2").hide("slow");
+            $("#fondo3").hide("slow");
+            $("#fondo5").hide("slow");
+            $("#fondo6").hide("slow");
+            $("#fondo4").css("visibility", "visible");
+            $("#fondo4").fadeTo(1000,1); 
+            $("#menu").show("slow");  
+        });
+    });
+
+
+$("#img30").click(function(){
                 $("#img30").removeClass("latido");
                 $("#unidades").show("slow");
                 $("#FlechaAdelante").css('background-size',"80%"); 
@@ -533,43 +559,26 @@
      
         $("#cascada").click(function(){
                 console.log("hola");
-                $("#cas1").show("slow");
+                $("#cas11").show("slow");
                 $("#cas41").css("opacity",0);
                 $("#cas41").show("slow");
              
         });
 
-        $("#cas1").click(function(){
+        $("#cas11").click(function(){
                 $("#cas41").css("opacity",1);
-                //$("#cas2").show("slow");
-                $("#cas3").css("opacity",0);
-                $("#cas3").show("slow");
+                $("#cas21").show("slow");
+                $("#cas31").css("opacity",0);
+                $("#cas31").show("slow");
                   
             });
 
          $("#cas41").click(function(){
-                $("#cas3").css("opacity",1);
+                $("#cas31").css("opacity",1);
                 $("#turbina2").show("slow"); 
                 $("#FlechaAdelante").css('background-size',"80%"); 
                 $("#FlechaAdelante").addClass('latido');     
             });
-
-
-        $('#Escena4').click(function(){
-            /*Ocultar escenas excepto la 2*/
-             $("#fondo7").hide("slow"),
-            $("#fondo5").hide("slow"),
-            $("body").css('background-image','url(./img/fondo4.jpg')    ;
-            $("#fondo").hide("slow");
-            $("#fondo2").hide("slow");
-            $("#fondo3").hide("slow");
-            $("#fondo5").hide("slow");
-            $("#fondo6").hide("slow");
-            $("#fondo4").css("visibility", "visible");
-            $("#fondo4").fadeTo(1000,1); 
-            $("#menu").show("slow");  
-        });
-    });
 
     $("#enchufe").click(function(){
               $("#ventana").addClass("latido");
@@ -586,6 +595,7 @@
     $(document).ready(function(){
         $('#Escena5').click(function(){
             /*Ocultar escenas excepto la 2*/
+            numEscena=5;
              $("#unidades").hide("slow");
             $("body").css('background-image','url(./img/fondo5.jpg')    ;
             $("#fondo7").hide("slow"),
@@ -616,6 +626,7 @@
 
     $(document).ready(function(){
         $('#Escena6').click(function(){
+            numEscena=6;
             /*Ocultar escenas excepto la 2*/
             $("body").css('background-image','url(./img/fondo6.jpg')    
             $("#fondo").hide("slow");
